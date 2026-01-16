@@ -19,7 +19,8 @@ h1 {
 
 
 
-/*追加フォーム*/
+
+
 .plusMemo-group {
     max-width: 500px;
     margin: 40px auto;
@@ -71,11 +72,10 @@ h1 {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/*追加フォームここまで*/
 
 
 
-/*メモ一覧*/
+
 .add-button {
     background-color: #cd0000;
     transition: all 0.5s 0s ease;
@@ -102,6 +102,10 @@ h1 {
 .update-button:hover {
     background-color: #008b00;
 }
+
+
+
+
 
 .button-group {
     margin: 10px auto;
@@ -173,12 +177,12 @@ h1 {
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.5s 0s ease;
 }
 
-/*メモ一覧ここまで*/
+
+
 
 
 .memo {
@@ -217,9 +221,10 @@ h1 {
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+
 
 
 

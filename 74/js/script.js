@@ -134,12 +134,16 @@ function updateMemo() {
     detailArray = JSON.parse(detailArrayJson);
     let titleInput = document.getElementById("title").value;
     let detailInput = document.getElementById("detail").value;
-    titleArray[displayItem] = titleInput;
-    detailArray[displayItem] = detailInput;
-    localStorage.setItem("title", JSON.stringify(titleArray));
-    localStorage.setItem("detail", JSON.stringify(detailArray));
-    alert("通過作品記録を更新しました");
-    window.location.href = "index.html";
+    if (titleInput == "") {
+        alert("通過作品のタイトルを記入してください");
+    } else {
+        titleArray[displayItem] = titleInput;
+        detailArray[displayItem] = detailInput;
+        localStorage.setItem("title", JSON.stringify(titleArray));
+        localStorage.setItem("detail", JSON.stringify(detailArray));
+        alert("通過作品記録を更新しました");
+        window.location.href = "index.html";
+    }
 }
 
 /*メモを削除する関数*/
