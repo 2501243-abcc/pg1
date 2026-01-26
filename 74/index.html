@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>通過作品一覧</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg_pattern Paper_v2"></div>
+
+    <h1>通過作品一覧</h1>
+    <p>タイトルと削除ボタンのみ表示しています。<br>詳細の確認や編集をする際はその項目をクリックしてください。</p>
+
+    <div id="button-group" class="button-group">
+        <button class="add-button" onclick="plusMemo()" type="button">追加</button>
+        <button class="delete-button" onclick="deleteAllMemo()" type="button">一括削除</button>
+    </div>
+
+    <div id="memo-group" class="memo-group">
+    </div>
+
+    <script>displayMemo();</script>
+</body>
+
+</html>
