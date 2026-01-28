@@ -110,7 +110,7 @@ function displayDetailMemo() {
 /*メモを編集するページに遷移する関数*/
 function transitioUpdateMemo(updateItem) {
     localStorage.setItem("updateItem", updateItem);
-    window.location.href = "html/update.html";
+    window.location.href = "update.html";
 }
 
 /*メモを編集する関数*/
@@ -170,4 +170,5 @@ function deleteAllMemo() {
         localStorage.clear();
         window.location.reload();
     }
+
 }
